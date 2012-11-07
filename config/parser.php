@@ -54,7 +54,7 @@ return array(
 	// ------------------------------------------------------------------------
 	'View_Twig' => array(
 		'include' => APPPATH.'vendor'.DS.'Twig'.DS.'Autoloader.php',
-		'auto_encode' => true,
+		'auto_encode' => false,
 		'views_paths' => array(APPPATH.'views'),
 		'delimiters' => array(
 			'tag_block'     => array('left' => '{%', 'right' => '%}'),
@@ -68,7 +68,7 @@ return array(
 			'cache'                => APPPATH.'cache'.DS.'twig'.DS,
 			'auto_reload'          => true,
 			'strict_variables'     => false,
-			'autoescape'           => false,
+			'autoescape'           => true,
 			'optimizations'        => -1,
 		),
 		'extensions' => array(

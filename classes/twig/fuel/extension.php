@@ -70,6 +70,10 @@ class Twig_Fuel_Extension extends Twig_Extension
 			'asset_js'      => new Twig_Function_Function('Asset::js'),
 			'asset_img'     => new Twig_Function_Function('Asset::img'),
 			'asset_render'  => new Twig_Function_Function('Asset::render'),
+
+			'dump'  => new Twig_Function_Function('var_dump'),
+
+			'session_get_flash'  => new Twig_Function_Function('Session::get_flash'),
 		);
 	}
 
